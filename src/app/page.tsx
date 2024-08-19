@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react"; 
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardList from "../components/CardList";
@@ -39,18 +40,20 @@ const HomePage = () => {
   if (error) return <p className="text-center mt-10 text-red-500">{error}</p>;
 
   return (
-    <div className="max-w-7xl mx-auto p-6">
-      {/* <section id="heading">
-        <Heading />
-      </section> */}
+    <main className="min-h-screen bg-white w-full text-primary-foreground relative">
+      <div className="h-[2px] w-full bg-main-gradient absolute top-0 z-50"></div>
       <div className="min-h-screen" id="home">
         <Hero />
       </div>
-      
-      <h1 className="text-4xl font-bold mb-6 text-center">Data from MySQL</h1>
-      <CardList data={data} />
-      
-    </div>
+      <div>
+    <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Trending Now</h1>
+    <CardList data={data}  />
+  </div>
+  <div>
+    <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Teledramas</h1>
+    <CardList data={data}  />
+  </div>
+    </main>
   );
 };
 

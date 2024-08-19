@@ -106,7 +106,7 @@ function Navbar() {
               <a href="/#">
                 <img
                   className={"mr-2 duration-500 h-10 md:h-[48px]"}
-                  src="/assets/Logo.png"
+                  src="./Jaya-tv-LOGO.png"
                   alt="Logo"
                 />
               </a>

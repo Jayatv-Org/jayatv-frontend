@@ -45,18 +45,26 @@ function CarouselNav() {
             <span className="text-black text-opacity-90 text-xl font-light xsc:text-sm">
               Colombo,Sri Lanaka
             </span>
+
           </div>
           <img
             className="w-[28%] object-cover xsc:w-[18px] smc:w-[200px]"
             src="../Jaya-tv-LOGO.png"
             alt="Jaya logo"
           />
+          
         </div>
-        <div className="smc:w-[100%] smc:flex smc:items-center smc:justify-center">
+        <img
+            className="w-[50%] object-cover xsc:w-[180px] smc:w-[200px]"
+            src="../jayatv-tune.jpg"
+            alt="Jaya logo"
+          />
+
+        {/* <div className="smc:w-[100%] smc:flex smc:items-center smc:justify-center">
           <Button asLink={true} to={"#heading"} Icon={MyIcon}>
             Find Out More
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
