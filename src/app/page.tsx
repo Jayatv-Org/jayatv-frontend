@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react"; 
+import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardList from "../components/CardList";
 import Heading from "../components/ui/Heding";
 import Hero from "@/components/Hero";
+import ContactUs from "@/components/ContactUs";
+import Gallery from "@/components/Gallery";
 
 interface Image {
   Id: number;
@@ -19,7 +21,6 @@ const HomePage = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
- 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -46,13 +47,24 @@ const HomePage = () => {
         <Hero />
       </div>
       <div>
-    <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Trending Now</h1>
-    <CardList data={data}  />
-  </div>
-  <div>
-    <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Teledramas</h1>
-    <CardList data={data}  />
-  </div>
+        <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">
+          Trending Now
+        </h1>
+        <CardList data={data} />
+      </div>
+      <div>
+        <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">
+          Teledramas
+        </h1>
+        <CardList data={data} />
+      </div>
+      <section id="gallery">
+        <Gallery />
+      </section>
+      <section id="contact">
+        <ContactUs />
+      </section>
+   
     </main>
   );
 };
