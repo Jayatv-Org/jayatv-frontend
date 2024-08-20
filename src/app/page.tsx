@@ -6,6 +6,7 @@ import axios from "axios";
 import CardList from "../components/CardList";
 import Heading from "../components/ui/Heding";
 import Hero from "@/components/Hero";
+import TodaySpecial from "@/components/TodaySpecial";
 
 interface Image {
   Id: number;
@@ -45,6 +46,7 @@ const HomePage = () => {
       <div className="min-h-screen" id="home">
         <Hero />
       </div>
+  
       <div>
     <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Trending Now</h1>
     <CardList data={data}  />
@@ -53,6 +55,10 @@ const HomePage = () => {
     <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">Teledramas</h1>
     <CardList data={data}  />
   </div>
+
+  <section>
+        <TodaySpecial/>
+      </section>
     </main>
   );
 };
