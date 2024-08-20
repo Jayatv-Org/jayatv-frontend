@@ -1,0 +1,25 @@
+import HorizontalScrollCarousel from "./HorizontalScrollCarousel";
+import Button from "./ui/button";
+import { Icons } from "./ui/Icons";
+
+const Gallery = () => {
+  return (
+    <div className="my-[96px] sm:my-[128px] flex flex-col gap-[40px] w-full sm:gap-[64px]">
+      <div className="mx-[16px] max-w-[960px] sm:w-full sm:mx-auto text-sectionTitle h-[35px] sm:px-[40px] text-[24px] font-[500]">
+        <p>Gallery</p>
+        <div className="border-b-2 border-border" />
+      </div>
+      <HorizontalScrollCarousel />
+      <div className="mx-[16px] max-w-[960px] sm:w-full sm:mx-auto flex flex-col gap-[40px] md:gap-0 md:flex-row sm:px-[40px] justify-between items-center">
+        <p className="text-justify md:text-left text-supportingText md:w-[532.5px] text-[16px] font-[300]">
+        {/* <p className="text-justify md:text-center text-supportingText md:w-full text-[16px] font-[300]"> */}
+          Explore moments of excellence captured through our lens. 
+        </p>
+        {/*Uncomment after gallery page is done*/}
+        <Button asLink={true} Icon={Icons.arrowUpRight} to={"/gallery"}>View Gallery</Button>
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;
