@@ -61,26 +61,18 @@ const HomePage = () => {
     <CardList data={data}  />
   </div>
 
-  <section>
-        <TodaySpecial/>
-      </section>
 
-        <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">
-          Trending Now
-        </h1>
-        <CardList data={data} />
-      </div>
-      <div>
-        <h1 className="text-4xl font-bold mb-6 text-auto card-list-container">
-          Teledramas
-        </h1>
-        <CardList data={data} />
-      </div>
+
+
       <section id="gallery">
         <Gallery />
       </section>
       <section id="contact">
         <ContactUs />
+      </section>
+
+      <section>
+        <TodaySpecial/>
       </section>
    
 

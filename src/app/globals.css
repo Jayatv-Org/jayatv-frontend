@@ -166,3 +166,12 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* globals.css */
+body {
+  background-color: #f7fafc; /* Example light gray background */
+}
+
+main {
+  background-color: #071e35; /* Custom background for the main content area */
+}
