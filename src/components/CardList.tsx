@@ -9,7 +9,7 @@ interface CardListProps {
     Id: number;
     Title: string;
     Description: string;
-    ImageUrl: string; // Add this line
+    ImageUrl: string; 
   }[];
 }
 
